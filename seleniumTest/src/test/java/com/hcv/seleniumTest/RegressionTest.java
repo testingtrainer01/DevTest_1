@@ -16,7 +16,7 @@ public WebDriver driver;
 	public void lauchApp() {
 		
 		if(System.getenv("BROWSER")!=null && System.getenv("BROWSER").equalsIgnoreCase("Chrome")) {
-		System.setProperty("webdriver.chrome.driver", new File("Resources/chromedriver.exe").getAbsolutePath());
+		System.setProperty("webdriver.chrome.driver", new File("src/test/java/com/hcv/resources/chromedriver.exe").getAbsolutePath());
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
